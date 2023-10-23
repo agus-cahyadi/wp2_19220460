@@ -1,9 +1,29 @@
 <?php
+defined('BASEPATH') or exit('No direct script access allowed');
+
+/**
+ *
+ * Controller Matakuliah
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @param     ...
+ * @return    ...
+ *
+ */
+
 class Matakuliah extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function index()
     {
-        $this->load->view('view-form-matakuliah');
+        $this->load->view('matakuliah/view-form-matakuliah');
     }
 
     public function cetak()
@@ -11,10 +31,9 @@ class Matakuliah extends CI_Controller
         $data = [
             'kode' => $this->input->post('kode'),
             'nama' => $this->input->post('nama'),
-            'sks' => $this->input->post('sks')
+            'sks' => $this->input->post('sks'),
         ];
 
-        $this->load->view('view-data-matakuliah', $data);
+        $this->load->view('matakuliah/view-data-matakuliah', $data);
     }
-
 }

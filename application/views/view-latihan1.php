@@ -1,15 +1,14 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>Latihan 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
 </head>
-
 <body>
- Halo Kawan.. Yuk kita belajar web programming..!!!<br>
- Nilai 1 = <?= $nilai1; ?>
- Nilai 2 = <?= $nilai2; ?>
- ini hasil dari pemodelan dengan methode penjumlahan yaitu <?=
-$nilai1 . " + " . $nilai2 . " = " . $hasil; ?>
+    <h2>Latihan Perhitungan</h2>
+    <h3>NILAI 1 = <?= $nilai1 ?></h3>
+    <h3>NILAI 2 = <?= $nilai2 ?></h3>
+    <h3>Hasil Penjumlahan = <?= $hasil ?></h3>
 </body>
-
 </html>
